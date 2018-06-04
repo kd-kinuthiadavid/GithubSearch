@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
+### Author
+By **Kinuthia David**
+
+## Description
+
+An application that enbles users to search their or other users' github usernames afterwhich their profile(s), repositories with repository description are displayed
+
+## Technologies Used
+
+* Angular CLI(Angular 6)
+* Node - for dependency management
+* Bootstrap
+* Typescript
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
