@@ -15,15 +15,15 @@
     <div class="item">
       <div>
     <img class="account-img img-thumbnail" src="{{user.avatar_url}}">
-    <ol>
+    <ul>
     <li><p style="font-weight:bold;">{{user.name}}</p>
     <li><p>{{user.login}}</p></li>
     <li><p>{{user.location}}</p></li>
     <li><p>{{user.email}}</p></li>
-    <hr>
-    <li><p>{{user.organisation}}<img src="{{user.organizations_url}}"></p></li>
-  </ol>
+    <li><p>{{user.organisation}}<img src="{{user.organizations_url}}" alt="organisation picture"></p></li>
+  </ul>
  </div>
+ <hr>
  <div class="grid-container">
  <div class="grid-item">
     <div class="track">
@@ -35,6 +35,9 @@
    <div class="panel panel-default">
      <div class="panel-heading">
        <strong><h3 class="panel-title">Repos</h3></strong>
+       <ul>
+         <li *ngFor="let repo of repos">{{repo.name}}</li>
+       </ul>
      </div>
      <div class="panel-body">
        <div *ngFor ="let repo of repos">

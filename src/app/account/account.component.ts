@@ -14,13 +14,13 @@ export class AccountComponent implements OnInit {
   username:string;
   constructor(private _githubService: GithubService) {
   this._githubService.getUser().subscribe(user => {
-    console.log)(user);
+    console.log(user);
     this.user = user;
   })
 }
-this._githubService.getRepos().subscribe(repos =>{
-  this,repos = repos;
-})
+// this._githubService.getRepos().subscribe(repos =>{
+//   this.repos = repos;
+// })
 
   ngOnInit() {
   }
