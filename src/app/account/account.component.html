@@ -1,3 +1,53 @@
-<p>
-  account works!
-</p>
+<body>
+  <div class="jumbotron">
+    <h1>Github Name Search </h1>
+</div>
+  <div class="container">
+    <div class="item">
+      <form class="get-git-username">
+        <label for="gitUsername">Username:</label>
+         <input class="form-control" type="text" placeholder="Enter a GitHub username" name="username" [(ngModel)] ="username" (keyup)="searchUser()">
+      </form>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="item">
+      <div>
+    <img class="account-img img-thumbnail" src="{{user.avatar_url}}">
+    <ol>
+    <li><p style="font-weight:bold;">{{user.name}}</p>
+    <li><p>{{user.login}}</p></li>
+    <li><p>{{user.location}}</p></li>
+    <li><p>{{user.email}}</p></li>
+    <hr>
+    <li><p>{{user.organisation}}<img src="{{user.organizations_url}}"></p></li>
+  </ol>
+ </div>
+ <div class="grid-container">
+ <div class="grid-item">
+    <div class="track">
+      <p> Repositories:  <span class=label-label-primary >{{user.public_repos}}</span></p>
+      <p> Followers:  {{user.followers}}</p>
+      <p> Following:  {{user.following}}</p>
+   </div>
+   </div>
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       <strong><h3 class="panel-title">Repos</h3></strong>
+     </div>
+     <div class="panel-body">
+       <div *ngFor ="let repo of repos">
+       <div class="row">
+         <div class="grid-item">
+           <h4><a href="user.html_url" target="_blank">{{repo.name}}</a></h4>
+           <p>{{repo.description}}</p>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+  </div>
+ </div>
+</div>
+</body>
