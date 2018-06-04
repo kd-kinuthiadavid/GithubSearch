@@ -17,12 +17,12 @@ export class GithubService {
 
   }
   getUser(){
-    return this._http.get("https://api.github.com/users/"+this.username+'?access_token='+this.apiUrl)
+    return this._http.get("https://api.github.com/users/"+this.username+'?access_token=faebeae9d1da6054be658bf567bc1a8b2f930b8a'+this.apiUrl)
     .map(result=>result)
 
   }
   getRepos(){
-    return this._http.get("https://api.github.com/users/"+this.username+'/repos'+'?access_token='+this.apiUrl)
+    return this._http.get("https://api.github.com/users/"+this.username+'/repos'+'?access_token=faebeae9d1da6054be658bf567bc1a8b2f930b8a'+this.apiUrl)
     .map(result=>result)
 }
 updateUser(username:string){
