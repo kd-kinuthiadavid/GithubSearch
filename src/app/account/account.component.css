@@ -1,0 +1,28 @@
+.TITLE{
+  font-size: 38px;
+  text-align: center;
+
+}
+.MYFORM{
+  margin-left: 200px;
+  margin-bottom: 80px;
+}
+.SEARCH{
+  height: 20px;
+  width: 500px;
+}
+.image-profile{
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  margin: auto;
+  border-radius: 40px;
+  width: 120px;
+  margin-left: 200px;
+
+}
+.partOne{
+  background-color: #CA9FAF;
+  height: 500px;
+  
+}
