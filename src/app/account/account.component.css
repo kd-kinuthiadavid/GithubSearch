@@ -33,9 +33,29 @@
 
 }
 .partOne{
-  background-color: #CA9FAF;
-  height: 150px;
+  background-color: #EDF0F0;
+  height: 50px;
 
+}
+.partTwo{
+  background-color: #EDF0F0;
+}
+.image-user{
+  float: left;
+}
+.user-details{
+  float: right;
+}
+.partThree{
+  background-color: white;
+}
+.firstWell{
+  height: 100px;
+  width: 250px;
+  margin-left: 50px;
+  margin-right: 40px;
+  background-color: #4D4D4F;
+  color: white;
 }
 .HEADER{
   background-color: #110107;
