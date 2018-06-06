@@ -42,6 +42,7 @@
 .partTwo{
   background-color: #EDF0F0;
   height: 200px;
+  /* margin-bottom: 1px; */
 }
 .image-user{
   float: left;
@@ -51,7 +52,8 @@
   margin-right: 170px;
 }
 .partThree{
-  background-color: white;
+  background-color: #EDF0F0;
+  padding-top: 1px;
 }
 .firstWell{
   height: 200px;
@@ -92,7 +94,10 @@
   float: right;
 }
 .myRepos{
-  height: 700px;
+  height: auto;
+  background-color: #EDF0F0;
+  /* margin-top: 5px; */
+
 }
 .footer{
   background-color: #110107;
@@ -102,4 +107,8 @@
 .footer-text{
   text-align: center;
   padding-top: 20px;
+}
+.sectionOne{
+  background-color: #EDF0F0;
+  height: 1000px;
 }
