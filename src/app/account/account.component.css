@@ -1,11 +1,22 @@
 .TITLE{
   font-size: 38px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+
+}
+.small{
+  color: white;
+  text-align: center;
+  margin-left: 555px;
+
 
 }
 .MYFORM{
   margin-left: 200px;
   margin-bottom: 80px;
+
 }
 .SEARCH{
   height: 20px;
@@ -23,6 +34,11 @@
 }
 .partOne{
   background-color: #CA9FAF;
-  height: 500px;
-  
+  height: 150px;
+
+}
+.HEADER{
+  background-color: #110107;
+  color: white;
+  height: 200px;
 }

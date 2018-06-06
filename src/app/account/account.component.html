@@ -1,28 +1,49 @@
 <body>
-  <div class="jumbotron">
-    <h1 class="TITLE">Github Name Search </h1>
-</div>
-  <div class="container partOne">
-    <div class="item">
-      <form class="get-git-username MYFORM">
-        <label for="gitUsername">Username:</label>
-         <input class="form-control SEARCH" type="text" placeholder="Enter a GitHub username" name="username" [(ngModel)] ="username" (keyup)="searchUser()">
-      </form>
+  <div class="container-fluid HEADER">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron ">
+          <h1 class="TITLE">Github Name Search </h1>
+          <small class="small"> - where people view users and their repositories</small>
+      </div>
+      </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid partOne">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="item">
+          <form class="get-git-username MYFORM">
+            <label for="gitUsername">Username:</label>
+             <input class="form-control SEARCH" type="text" placeholder="Enter a GitHub username" name="username" [(ngModel)] ="username" (keyup)="searchUser()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 image-user">
+        <img class="account-img img-thumbnail image-profile" src="{{user.avatar_url}}">
+      </div>
+
+      <div class="col-md-6 user-details">
+        <div>
+          <ul>
+          <li><p style="font-weight:bold;">{{user.name}}</p>
+          <li><p>{{user.login}}</p></li>
+          <li><p>{{user.location}}</p></li>
+          <li><p>{{user.email}}</p></li>
+          <li><p>{{user.organisation}}<img src="{{user.organizations_url}}" alt="organisation picture"></p></li>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
     <div class="item">
-      <div>
-    <img class="account-img img-thumbnail image-profile" src="{{user.avatar_url}}">
-    <ul>
-    <li><p style="font-weight:bold;">{{user.name}}</p>
-    <li><p>{{user.login}}</p></li>
-    <li><p>{{user.location}}</p></li>
-    <li><p>{{user.email}}</p></li>
-    <li><p>{{user.organisation}}<img src="{{user.organizations_url}}" alt="organisation picture"></p></li>
-  </ul>
- </div>
+
  <hr>
  <div class="grid-container">
  <div class="grid-item">
