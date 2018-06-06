@@ -45,32 +45,53 @@
     <div class="item">
 
  <hr>
- <div class="grid-container">
- <div class="grid-item">
-    <div class="track">
-      <p> Repositories:  <span class=label-label-primary >{{user.public_repos}}</span></p>
-      <p> Followers:  {{user.followers}}</p>
-      <p> Following:  {{user.following}}</p>
-   </div>
-   </div>
-   <div class="panel panel-default">
-     <div class="panel-heading">
-       <strong><h3 class="panel-title">Repos</h3></strong>
-       <ul>
-         <li *ngFor="let repo of repos">{{repo.name}}</li>
-       </ul>
-     </div>
-     <div class="panel-body">
-       <div *ngFor ="let repo of repos">
-       <div class="row">
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-md-12">
+       <div class="well">
+         <div class="grid-container">
          <div class="grid-item">
-           <h4><a href="user.html_url" target="_blank">{{repo.name}}</a></h4>
-           <p>{{repo.description}}</p>
-             </div>
+            <div class="track">
+              <p> Repositories:  <span class=label-label-primary >{{user.public_repos}}</span></p>
+              <p> Followers:  {{user.followers}}</p>
+              <p> Following:  {{user.following}}</p>
+           </div>
            </div>
          </div>
        </div>
-    </div>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-md-12">
+       <div class="well">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <strong><h3 class="panel-title">Repos</h3></strong>
+             <ul>
+               <li *ngFor="let repo of repos">{{repo.name}}</li>
+             </ul>
+           </div>
+           <div class="panel-body">
+             <div *ngFor ="let repo of repos">
+             <div class="row">
+               <div class="grid-item">
+                 <h4><a href="user.html_url" target="_blank">{{repo.name}}</a></h4>
+                 <p>{{repo.description}}</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
   </div>
  </div>
 </div>
