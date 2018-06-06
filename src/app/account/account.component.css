@@ -20,31 +20,35 @@
 }
 .SEARCH{
   height: 20px;
-  width: 500px;
+  width: 700px;
+  margin-top: 20px;
 }
 .image-profile{
   border-style: solid;
   border-color: grey;
   border-width: 2px;
   margin: auto;
-  border-radius: 40px;
-  width: 120px;
+  border-radius: 90px;
+  width: 180px;
   margin-left: 200px;
+  margin-top: -10px;
 
 }
 .partOne{
   background-color: #EDF0F0;
-  height: 50px;
+  height: 130px;
 
 }
 .partTwo{
   background-color: #EDF0F0;
+  height: 200px;
 }
 .image-user{
   float: left;
 }
 .user-details{
   float: right;
+  margin-right: 170px;
 }
 .partThree{
   background-color: white;
