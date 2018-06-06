@@ -30,14 +30,14 @@
       </div>
 
       <div class="col-md-6 user-details">
-        <div>
-          <ul>
-          <li><p>Name: {{user.name}}</p>
-          <li><p>userName: {{user.login}}</p></li>
-          <li><p>Location: {{user.location}}</p></li>
-          <li><p>Email: {{user.email}}</p></li>
-          <li><p>organisation: {{user.organisation}}<img src="{{user.organizations_url}}" alt="organisation picture"></p></li>
-        </ul>
+        <div class="sub-partOne">
+
+          <input class="input-buttons" type="button" name="" value="Name: {{user.name}}"> <br>
+            <input class="input-buttons" type="button" name="" value="userName: {{user.login}}"> <br>
+        <input class="input-buttons" type="button" name="" value="Location: {{user.location}}"> <br>
+        <input class="input-buttons" type="button" name="" value="Email: {{user.email}}"> <br>
+          <input class="input-buttons" type="button" name="" value="organisation: {{user.organisation}}">
+
        </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
        <div class="well firstWell">
          <div class="grid-container">
          <div class="grid-item">
-            <div class="track">
+            <div class="track well-text">
               <p> Repositories:  <span class=label-label-primary >{{user.public_repos}}</span></p>
               <p> Followers:  {{user.followers}}</p>
               <p> Following:  {{user.following}}</p>
@@ -64,29 +64,51 @@
  </div>
 
 
- <div class="container-fluid">
+ <div class="container-fluid myRepos">
    <div class="row">
      <div class="col-md-12">
        <div class="well">
          <div class="panel panel-default">
-           <div class="panel-heading">
-             <strong><h3 class="panel-title">Repos</h3></strong>
-             <ul>
-               <li *ngFor="let repo of repos">{{repo.name}}</li>
-             </ul>
-           </div>
-           <div class="panel-body">
-             <div *ngFor ="let repo of repos">
+           <div class="container-fluid">
              <div class="row">
-               <div class="grid-item">
-                 <h4><a href="user.html_url" target="_blank">{{repo.name}}</a></h4>
-                 <p>{{repo.description}}</p>
-                   </div>
+               <div class="container-md-6 repos-list">
+                 <div class="panel-heading">
+                   <strong><h3 class="panel-title">Repos</h3></strong>
+                   <ul>
+                     <li *ngFor="let repo of repos">{{repo.name}}</li>
+                   </ul>
                  </div>
                </div>
+               <div class="col-md-6 repos-details">
+                 <div class="panel-body">
+                   <div *ngFor ="let repo of repos">
+                   <div class="row">
+                     <div class="grid-item">
+                       <h4><a href="user.html_url" target="_blank">{{repo.name}}</a></h4><p>:{{repo.description}}</p>
+
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+               </div>
              </div>
+           </div>
+
+
           </div>
        </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="container-fluid footer">
+   <div class="row">
+     <div class="col-md-12">
+       <div class="footer-text">
+         <p class="copyright"> &copy; Copyright. 2018.All Rights Reserved</p>
+         <p class="developedBy">Developed by Kinuthia David</p>
+       </div>
+
      </div>
    </div>
  </div>

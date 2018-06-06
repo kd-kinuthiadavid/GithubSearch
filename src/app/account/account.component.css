@@ -54,15 +54,52 @@
   background-color: white;
 }
 .firstWell{
-  height: 100px;
-  width: 250px;
-  margin-left: 50px;
+  height: 200px;
+  width: 600px;
+  margin-left: 300px;
   margin-right: 40px;
   background-color: #4D4D4F;
   color: white;
+  margin-top: 50px;
+}
+.well-text{
+  text-align: center;
+  padding-top: 30px;
 }
 .HEADER{
   background-color: #110107;
   color: white;
   height: 200px;
+}
+.input-buttons{
+  height: 30px;
+  width: 200px;
+  color: white;
+  background-color: #686477;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5D557C;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.sub-partOne{
+  margin-top: -10px;
+}
+.repos-list{
+  float: left;
+}
+.repos-details{
+  float: right;
+}
+.myRepos{
+  height: 700px;
+}
+.footer{
+  background-color: #110107;
+  color: white;
+  height: 150px;
+}
+.footer-text{
+  text-align: center;
+  padding-top: 20px;
 }
